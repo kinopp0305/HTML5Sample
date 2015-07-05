@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="Shift-JIS">
+        <title>動的なグラフを作ろう</title>
+        <script type="text/javascript" src="./js/graph4.js"></script>
+    </head>
+
+    <body onLoad="draw()">
+        <canvas id="canvas1" width="400" height="300"></canvas>
+
+        <form name="form1">
+            A:<input type="range" name="A" value="20" min="0" max="200" onChange="draw()"><br>
+            B:<input type="range" name="B" value="160" min="0" max="200" onChange="draw()"><br>
+            C:<input type="range" name="C" value="60" min="0" max="200" onChange="draw()"><br>
+            D:<input type="range" name="D" value="120" min="0" max="200" onChange="draw()"><br>
+            E:<input type="range" name="E" value="80" min="0" max="200" onChange="draw()"><br>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="Shift-JIS">
+        <title>検索フォーム</title>
+        <script type="text/javascript" src="./js/form3.js"></script>
+    </head>
+    
+    <body>
+        <form name="form1">
+            商品キーワード<br>
+            <input type="search" name="gname" list="goods" size="50" placeholder="商品名またはジャンル">
+            <datalist id="goods">
+                <option value="Tシャツ">
+                <option value="ポロシャツ">
+                <option value="トレーナー">
+                <option value="セーター">
+            </datalist>
+            <br><br>
+
+            価格<br>
+            <input type="text" name="minprice" value="1000" pattern="[\d]+" onInput="checkPrice()">円～
+            <input type="text" name="maxprice" value="5000" pattern="[\d]+" onInput="checkPrice()">円
+            <br><br>
+
+            <fieldset id="optionQuery" disabled>
+                <legend><input type="checkbox" name="optionCheck" onChange="changeOption()">絞り込む</legend>
+
+                色を選んでください。<br>
+                <label><input type="radio" name="gcolor" value="color1" checked>暖色系</label>
+                <label><input type="radio" name="gcolor" value="color2">寒色系</label>
+                <label><input type="radio" name="gcolor" value="color3">モノトーン系</label>
+                <br><br>
+
+                サイズを選んでください。<br>
+                <label><input type="radio" name="gsize" value="S" checked>Small</label>
+                <label><input type="radio" name="gsize" value="M">Midium</label>
+                <label><input type="radio" name="gsize" value="L">Large</label>
+            </fieldset>
+            <br><br>
+
+            <input type="submit" value="検索する">
+        </form>
+    </body>
+</html>
+

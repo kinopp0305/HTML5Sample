@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="Shift-JIS">
+        <title>動画を再生しよう</title>
+        <script type="text/javascript" src="./js/video2.js"></script>
+    </head>
+
+    <body>
+        <form name="form1">
+            <input type="button" name="playButton" value="Play" onClick="changePlay()">
+            <input type="range" name="timeRange" min="0" step="0.1" value="0" onChange="changeTime()">
+            Time: <span id="timeText"></span>
+            <br>
+            
+            <input type="button" name="muteButton" value="Mute" onClick="changeMute()">
+            <input type="range" name="volumeRange" min="0" max="1" step="0.1" value="1" onChange="changeVolume()">
+            Volume: <span id="volumeText">1</span>
+            <br>
+
+            <input type="button" name="sizeButton" value="Full Size" onClick="changeSize(true)">
+            <input type="range" name="sizeRange" min="320" step="1" value="320" onChange="changeSize(false)">
+            Size: <span id="sizeText">320*240</span>
+        </form>
+        <hr>
+        <video id="video1" width="320" height="240" poster="./jpg/sample1.jpg">
+            <source src="./mp4/sample1.mp4">
+            <source src="./webm/sample1.webm">
+        </video>
+    </body>
+</html>
+
+

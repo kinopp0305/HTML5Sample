@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="Shift-JIS">
+        <title>音楽を再生しよう</title>
+        <script type="text/javascript" src="./js/audio2.js"></script>
+    </head>
+    <body>
+        <a href="#" onClick="changeSrc(0)"><img src="./img/spring.jpg" width="80" height="80" title="春"></a>
+        <a href="#" onClick="changeSrc(1)"><img src="./img/summer.jpg" width="80" height="80" title="夏"></a>
+        <a href="#" onClick="changeSrc(2)"><img src="./img/autumn.jpg" width="80" height="80" title="秋"></a>
+        <a href="#" onClick="changeSrc(3)"><img src="./img/winter.jpg" width="80" height="80" title="冬"></a>
+        <hr>
+        <img src="./img/spring.jpg" id="image1" width="320" height="320" title="選択された季節">
+        <br>
+        <audio id="audio1" src="./mp3/spring.mp3" controls autoplay></audio>
+    </body>
+</html>
