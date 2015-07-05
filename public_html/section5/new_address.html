@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="Shift-JIS">
+        <title>アドレス帳</title>
+        <script type="text/javascript" src="./js/new_address.js" charset="UTF-8"></script>
+    </head>
+    <body>
+        ｜<b>新規登録</b>｜<a href="query_address.html">検索</a>｜
+        <hr>
+        <form name="form1" onSubmit="return setAddress();">
+            名前：
+            <input type="text" name="uname" placeholder="名前を入力してください。" required>
+            <br><br>
+            メールアドレス：
+            <input type="email" name="umail" placeholder="メールアドレスを入力してください。">
+            <br><br>
+            <input type="submit" value="アドレスの追加">
+        </form>
+        <hr>
+        <span id="message"></span>
+    </body>
+</html>

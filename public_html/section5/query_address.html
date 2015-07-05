@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="Shift-JIS">
+        <title>アドレス帳</title>
+        <script type="text/javascript" src="./js/query_address.js" charset="UTF-8"></script>
+        <link rel="stylesheet" type="text/css" href="./css/query_address.css">
+    </head>
+    <body>
+        ｜<a href="new_address.html">新規登録</a>｜<b>検索</b>｜
+        <hr>
+        <form name="form1" onSubmit="return showAddress();">
+            <input type="search" name="qword" size="40" placeholder="名前またはメールアドレス">
+            <input type="submit" value="検索">
+        </form>
+        <hr>
+        <table>
+            <thead>
+                <tr><th>名前</th><th>メールアドレス</th><th>操作</th></tr>
+            </thead>
+            <tbody id="addressList"></tbody>
+        </table>
+    </body>
+</html>

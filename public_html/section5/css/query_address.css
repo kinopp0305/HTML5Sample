@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015/07/05, 21:01:10
+    Author     : kinopp
+*/
+
+table {
+	border:1px solid #000000;
+	border-spacing:0;
+	border-collapse:collapse;
+	width:400px;
+	font-size:small;
+}
+th {
+	border:1px solid #000000;
+	padding:5px;
+	background:#CCCCCC;
+}
+td {
+	border:1px solid #000000;
+	padding:5px;
+}

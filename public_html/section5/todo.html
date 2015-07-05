@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="Shift-JIS">
+        <title>ToDoリスト</title>
+        <script type="text/javascript" src="./js/todo.js" charset="UTF-8"></script>
+    </head>
+    <body onLoad="showTask()">
+        <form name="form1">
+            <input type="text" name="newTask" size="30" placeholder="追加するタスクを入力してください。">
+            <input type="range" name="newProgress" min="0" max="100" step="5" value="0">
+            <input type="button" value="タスクの追加" onClick="setTask('new')">
+            <input type="button" value="全タスクの削除" onClick="removeTask('all')">
+            <hr>
+            <span id="taskList"></span>
+        </form>
+    </body>
+</html>

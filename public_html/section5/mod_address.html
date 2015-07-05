@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="Shift-JIS">
+        <title>アドレス帳</title>
+        <script type="text/javascript" src="./js/mod_address.js" charset="UTF-8"></script>
+    </head>
+    <body onLoad="showAddressId()">
+        ｜<a href="new_address.html">新規登録</a>｜<a href="query_address.html">検索</a>｜
+        <hr>
+        <form name="form1" onSubmit="return updateAddress();">
+            名前：
+            <input type="text" name="uname" required>
+            <br><br>
+            メールアドレス：
+            <input type="email" name="umail">
+            <br><br>
+            <input type="submit" value="変更内容を保存する">
+            <input type="button" value="削除する" onClick="deleteAddress()">
+        </form>
+        <hr>
+        <span id="message"></span>
+    </body>
+</html>
